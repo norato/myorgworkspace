@@ -1,6 +1,14 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
+export type InputType =
+  | 'email'
+  | 'number'
+  | 'password'
+  | 'text'
+  | 'checkbox'
+  | 'search';
+
 @Component({
   selector: 'my-org-ui-input',
   templateUrl: './input.component.html',
@@ -9,6 +17,7 @@ import { FormControl } from '@angular/forms';
 export class InputComponent implements OnInit {
   @Input() control: FormControl;
   @Input() placeholder: string;
+  @Input() type: InputType = 'text';
 
   constructor() {}
 
