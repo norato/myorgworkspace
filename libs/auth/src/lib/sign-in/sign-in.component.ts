@@ -1,6 +1,7 @@
-import { FormControl, Validators, FormGroup } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
-
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { first } from 'rxjs/operators';
+import { AuthService } from '../auth/auth.service';
 @Component({
   selector: 'my-org-auth-sign-in',
   templateUrl: './sign-in.component.html',
@@ -15,11 +16,16 @@ export class SignInComponent implements OnInit {
     password: this.password
   });
 
-  constructor() {}
+  constructor(private readonly authService: AuthService) {}
 
   ngOnInit() {}
 
   onSubmit() {
-    console.log('foo');
+    if (this.form.valid) {
+      this.authService
+        .signin(this.form.value)
+        .pipe(first())
+        .subscribe();
+    }
   }
 }
