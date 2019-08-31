@@ -1,14 +1,15 @@
-import { InputComponent } from './input.component';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { storiesOf, moduleMetadata } from '@storybook/angular';
-import { UiModuleName } from '../ui.module';
+import { UiModuleName } from '@myorgworkspace/ui';
+import { moduleMetadata, storiesOf } from '@storybook/angular';
+import { InputComponent } from './input.component';
 
+const storyName = [UiModuleName, InputComponent.name].join(' | ');
 const metadata = moduleMetadata({
   imports: [FormsModule, ReactiveFormsModule],
   declarations: [InputComponent]
 });
 
-storiesOf(`${UiModuleName} | InputComponent`, module)
+storiesOf(storyName, module)
   .addDecorator(metadata)
   .add('default', () => ({
     template: `

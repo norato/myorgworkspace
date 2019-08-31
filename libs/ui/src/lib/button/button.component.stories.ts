@@ -6,7 +6,7 @@ const metadata = moduleMetadata({
   declarations: [ButtonComponent]
 });
 
-const storyName = [UiModuleName, String(ButtonComponent.name)].join(' | ');
+const storyName = [UiModuleName, ButtonComponent.name].join(' | ');
 
 storiesOf(storyName, module)
   .addDecorator(metadata)
