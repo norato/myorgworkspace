@@ -15,7 +15,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@myorgworkspace/ui": ["libs/ui/src/index.ts"],
+      "@myorgworkspace/auth": ["libs/auth/src/index.ts"],
+      "@myorgworkspace/store": ["libs/store/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

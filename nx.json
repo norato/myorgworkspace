@@ -7,5 +7,15 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "ui": {
+      "tags": []
+    },
+    "auth": {
+      "tags": []
+    },
+    "store": {
+      "tags": []
+    }
+  }
 }
