@@ -18,5 +18,23 @@
     position: relative;
     background-color: #1734fd;
     border: none;
+
+    &[disabled] {
+      background-color: #eeeeee;
+      background: #eeeeee;
+      border: none;
+      text-transform: none;
+      color: #919696;
+      fill: #919696;
+      cursor: not-allowed;
+      box-shadow: none;
+      &:hover,
+      &:focus {
+        box-shadow: none;
+      }
+      &:before {
+        display: none;
+      }
+    }
   }
 }

@@ -6,7 +6,8 @@ import { InputComponent } from './input/input.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, ReactiveFormsModule],
-  declarations: [InputComponent, ButtonComponent]
+  declarations: [InputComponent, ButtonComponent],
+  exports: [InputComponent, ButtonComponent]
 })
 export class UiModule {}
 

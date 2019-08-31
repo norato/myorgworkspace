@@ -1,0 +1,9 @@
+:host {
+  display: grid;
+  grid-gap: 2rem;
+  padding: 2rem;
+  width: fit-content;
+  & > my-org-ui-button {
+    justify-self: center;
+  }
+}

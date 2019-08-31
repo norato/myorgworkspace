@@ -1,0 +1,13 @@
+<my-org-ui-input placeholder="User Name" [control]="username"></my-org-ui-input>
+
+<my-org-ui-input
+  placeholder="Password"
+  [control]="password"
+  type="password"
+></my-org-ui-input>
+
+<my-org-ui-button
+  label="Submit"
+  (click)="onSubmit()"
+  [disabled]="form.invalid || !form.touched"
+></my-org-ui-button>

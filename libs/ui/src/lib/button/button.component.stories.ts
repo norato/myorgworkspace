@@ -11,5 +11,8 @@ const storyName = [UiModuleName, ButtonComponent.name].join(' | ');
 storiesOf(storyName, module)
   .addDecorator(metadata)
   .add('story name', () => ({
-    template: `<my-org-ui-button label="Button Label" ></my-org-ui-button>`
+    template: `
+      <my-org-ui-button label="Button Label" ></my-org-ui-button>
+      <my-org-ui-button label="Disabled" [disabled]="true"></my-org-ui-button>
+    `
   }));
