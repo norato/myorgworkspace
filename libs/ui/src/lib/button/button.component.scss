@@ -1,0 +1,22 @@
+:host {
+  & > button {
+    font-size: 0.8rem;
+    padding: 0 30px;
+    font-weight: bold;
+    color: white;
+    fill: white;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: center;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #1734fd;
+    border: none;
+  }
+}
