@@ -16,6 +16,12 @@
     },
     "store": {
       "tags": []
+    },
+    "foobar-e2e": {
+      "tags": []
+    },
+    "foobar": {
+      "tags": []
     }
   }
 }

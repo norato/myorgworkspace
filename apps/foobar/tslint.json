@@ -1,0 +1,7 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [true, "attribute", "myOrgFoobar", "camelCase"],
+    "component-selector": [true, "element", "my-org-foobar", "kebab-case"]
+  }
+}
