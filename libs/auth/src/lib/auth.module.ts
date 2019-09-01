@@ -13,7 +13,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  declarations: [SignInComponent]
+  declarations: [SignInComponent],
+  exports: [SignInComponent]
 })
 export class AuthModule {}
 export const AuthModuleName = AuthModule.name;
