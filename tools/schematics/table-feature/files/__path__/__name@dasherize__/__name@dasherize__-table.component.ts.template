@@ -1,0 +1,9 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: '<%= selector %>-table',
+  templateUrl: './<%= dasherize(name) %>-table.component.html',
+  styleUrls: ['./<%= dasherize(name) %>-table.component.scss']
+})
+export class <%= classify(name) %>TableComponent {
+}
