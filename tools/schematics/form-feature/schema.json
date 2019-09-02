@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "id": "SchematicsTable",
-  "title": "Feature Table Schema",
+  "id": "SchematicsForm",
+  "title": "Feature Form Schema",
   "type": "object",
   "properties": {
     "path": {
