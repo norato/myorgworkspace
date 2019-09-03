@@ -15,3 +15,7 @@ export function joinPath(schema: Schema) {
     schema.name
   );
 }
+
+export function joinLibPath(schema: Schema) {
+  return path.join('libs', schema.project, 'src', 'lib', schema.name);
+}
