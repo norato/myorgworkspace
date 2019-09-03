@@ -1,5 +1,5 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
-import {<%= classify(name) %>Component} from './<%= dasherize(name) %>';
+import {<%= classify(name) %>Component} from './<%= dasherize(name) %>.component';
 import { <%= classify(project) %>ModuleName } from '@myorgworkspace/<%= dasherize(project) %>';
 
 const metadata = moduleMetadata({
@@ -12,7 +12,7 @@ const storyName = [<%= classify(project) %>ModuleName, <%= classify(name) %>Comp
 
 storiesOf(storyName, module)
   .addDecorator(metadata)
-  .add('story name', () => ({
-    template: ``,
+  .add('default', () => ({
+    template: `<my-org-<%= dasherize(project) %>-<%= dasherize(name) %>></my-org-<%= dasherize(project) %>-<%= dasherize(name) %>>`,
     props: {}
   }));
