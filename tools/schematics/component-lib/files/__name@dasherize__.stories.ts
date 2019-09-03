@@ -7,7 +7,7 @@ const metadata = moduleMetadata({
   ]
 });
 
-const storyName = [UiModuleName, <%= classify(name) %>Component.name].join(' | ');
+const storyName = [<%= classify(project) %>ModuleName, <%= classify(name) %>Component.name].join(' | ');
 
 storiesOf(storyName, module)
   .addDecorator(metadata)
