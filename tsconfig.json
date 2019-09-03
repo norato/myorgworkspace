@@ -21,5 +21,5 @@
       "@myorgworkspace/store": ["libs/store/src/index.ts"]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": ["node_modules", "tmp", "tools/schematics/**/files/*.ts"]
 }

@@ -6,7 +6,8 @@
   "exclude": [
     "../libs/**/*.spec.ts",
     "../apps/**/*.spec.ts",
-    "../apps/**/*.po.ts"
+    "../apps/**/*.po.ts",
+    "../tools/**/*.ts"
   ],
   "include": ["../libs/**/*", "../apps/**/*"],
   "files": ["./typings.d.ts"]
