@@ -1,0 +1,32 @@
+- name: GitHub Action for npm
+  uses: actions/npm@1.0.0
+
+
+on: push
+name: on push
+jobs:
+  fetch:
+    name: fetch dependencies
+    steps:
+    - uses: actions/npm@master
+    with:
+      args: install
+  test:
+    name: test
+    steps:
+    - uses: actions/npm@master
+    with:
+      args: test
+  lint:
+    name: lint
+    steps:
+    - uses: actions/npm@master
+    with:
+      args: lint
+  build:
+    name: build
+    steps:
+    - uses: actions/npm@master
+    with:
+      args: build -aot
+
