@@ -1,21 +1,30 @@
+import { HttpClient } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UiModule } from '@myorgworkspace/ui';
-import { SignInComponent } from './sign-in.component';
+import { mock, instance } from 'ts-mockito';
+import { AuthSignInComponent } from './sign-in.component';
 
 describe('SignInComponent', () => {
-  let component: SignInComponent;
-  let fixture: ComponentFixture<SignInComponent>;
+  let component: AuthSignInComponent;
+  let fixture: ComponentFixture<AuthSignInComponent>;
+  const httpMock = mock(HttpClient);
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [SignInComponent],
-      imports: [FormsModule, ReactiveFormsModule, UiModule]
+      declarations: [AuthSignInComponent],
+      imports: [FormsModule, ReactiveFormsModule, UiModule],
+      providers: [
+        {
+          provide: HttpClient,
+          useValue: instance(httpMock)
+        }
+      ]
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SignInComponent);
+    fixture = TestBed.createComponent(AuthSignInComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

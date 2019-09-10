@@ -7,7 +7,7 @@ import { AuthService } from '../auth/auth.service';
   templateUrl: './sign-in.component.html',
   styleUrls: ['./sign-in.component.scss']
 })
-export class SignInComponent implements OnInit {
+export class AuthSignInComponent implements OnInit {
   username = new FormControl('', [Validators.required]);
   password = new FormControl('', [Validators.required]);
 

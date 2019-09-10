@@ -3,7 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UiModule } from '@myorgworkspace/ui';
-import { SignInComponent } from './sign-in/sign-in.component';
+import { AuthSignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   imports: [
@@ -13,8 +13,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  declarations: [SignInComponent],
-  exports: [SignInComponent]
+  declarations: [AuthSignInComponent],
+  exports: [AuthSignInComponent]
 })
 export class AuthModule {}
 export const AuthModuleName = AuthModule.name;

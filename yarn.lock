@@ -8118,6 +8118,11 @@ neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
+ng-mocks@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/ng-mocks/-/ng-mocks-8.1.0.tgz#d00a5e53ae53587f35c68147826590fab71a1658"
+  integrity sha512-/314nyU6UrONCUKfvFRuJPLpNBxqocwJmQBlPy4he5Vueu6gObXjy+KLUlbbENuA7zTeBjp//RA6w/Fa1yQ4Fw==
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
@@ -11334,6 +11339,13 @@ ts-loader@^6.0.1:
     loader-utils "^1.0.2"
     micromatch "^4.0.0"
     semver "^6.0.0"
+
+ts-mockito@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/ts-mockito/-/ts-mockito-2.4.2.tgz#e3b383a3cbfbf5225dff7365d98ddc32af75b846"
+  integrity sha512-3AqLVXxjfdwlo2eC+xrzFsc5rsPtKBBhJZAnxWmyBmgT/PC+K26RIxiT2QLKcqjcJqZnuGZkwfPMx2gN31lFnw==
+  dependencies:
+    lodash "^4.17.5"
 
 ts-node@~7.0.0:
   version "7.0.1"
